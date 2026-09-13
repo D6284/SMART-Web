@@ -1,0 +1,18 @@
+{
+    "cleanUrls": true,
+    "trailingSlash": false,
+    "routes": [
+        {
+            "handle": "filesystem"
+        },
+        {
+            "src": "/(about|academy|community|contact|innovation|privacy|programs|projects|solutions|terms)",
+            "dest": "/$1.html"
+        },
+        {
+            "src": "/.*",
+            "status": 404,
+            "dest": "/404.html"
+        }
+    ]
+}
